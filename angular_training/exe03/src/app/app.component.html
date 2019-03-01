@@ -1,0 +1,6 @@
+<div class="h-screen w-full bg-grey ">
+  <div class="p-2 w-3/4 container mx-auto border-2">
+  <h1 class="border-b-2 mb-4">My App</h1>
+ <p>Total cart : {{totalCart}} €</p>
+  <app-list [articles]="articles" (addArticleToCart)="changeTotal($event)"></app-list>
+</div>

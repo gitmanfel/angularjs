@@ -1,0 +1,20 @@
+<div>
+  <div class="w-full border rounded flex flex-row ">
+    <div class="w-1/4 stretch">
+      <img src="{{article.img}}" alt="">
+
+    </div>
+    <div class="w-3/4  stretch flex flex-col items-center">
+      <h2>
+        {{article.label}}
+      </h2>
+      <p>
+        {{article.price}}
+      </p>
+      <p>
+        <button class="bg-blue hover:bg-blue-dark text-white font-bold py-2 px-4 rounded" (click)="updateCart()">Add to cart</button>
+      </p>
+
+    </div>
+
+  </div>

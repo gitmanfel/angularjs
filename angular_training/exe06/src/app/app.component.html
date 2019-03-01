@@ -1,0 +1,21 @@
+<div>
+  <table>
+    <tr>
+      <td>
+        <h2>Liste</h2>
+        <p *ngIf="isLoading">Loading ...</p>
+        <ul>
+          <li *ngFor="let pet of pets" (click)="selectPet(pet)">{{pet.name}}</li>
+        </ul>
+      </td>
+      <td valign="top">
+        <h2>details</h2>
+        <div *ngIf="selectedPet">
+          id:{{selectedPet.id}} <br>
+          name : {{selectedPet.name}}<br>
+          status: {{selectedPet.status}}
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>

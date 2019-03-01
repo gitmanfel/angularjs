@@ -1,0 +1,6 @@
+<h2>Liste d'articles</h2>
+<div *ngFor="let article of articles">
+    <app-article [article]="article" (addArticleToCart)="addArticleToCartList($event)"></app-article>
+
+
+</div>

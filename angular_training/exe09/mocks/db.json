@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "joelle@triptyk.eu",
+      "street": "avenue du Tir",
+      "number": 80,
+      "zip": 7000,
+      "town": "Mons"
+    },
+    {
+      "id": 2,
+      "email": "gilles@triptyk.eu",
+      "street": "avenue dui tir",
+      "number": "80",
+      "zip": "kjdfhg",
+      "town": "kljfhd"
+    }
+  ]
+}

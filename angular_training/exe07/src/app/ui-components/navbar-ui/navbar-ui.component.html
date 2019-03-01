@@ -1,0 +1,15 @@
+<ul class="list-reset flex">
+  <li class="mr-6">
+    <a [routerLink]="['/home']" routerLinkActive="text-green"  class="text-grey hover:text-red-darker" >Home</a>
+  </li>
+  <li class="mr-6">
+    <a [routerLink]="['/about']" routerLinkActive="text-green"  class="text-grey hover:text-red-darker">About</a>
+  </li>
+  <li class="mr-6">
+    <a *ngIf="authService.isLoggedIn.value" class="text-grey hover:text-red-darker" (click)="onLogout()">logout</a>
+    <a *ngIf="!authService.isLoggedIn.value" [routerLink]="['/login']" routerLinkActive="text-green"  class="text-grey hover:text-red-darker">Login</a>
+  </li>
+  <li class="mr-6">
+    <a [routerLink]="['/admin']" routerLinkActive="text-green"  class="text-grey hover:text-red-darker">Admin</a>
+  </li>
+</ul>
